@@ -61,13 +61,29 @@ public class Runner {
         return false;
     }
 
+    //Finish this one :|
     public static boolean evenlySpaced(int a, int b, int c) {
         int difa = Math.abs(a - b);
         int difb = Math.abs(c - b);
-        if ((difa > difb) || (difa < difb)){
-            return false;
-        }
-        return true;
+//        if ((difa > difb) || (difa < difb)){
+//            return false;
+//        }
+        return (difa > difb) || (difa < difb);
     }
 
+    public static boolean catDog(String str) {
+        int catCt = 0;
+        int dogCt = 0;
+        String cat = "";
+        String dog = "";
+        for (int i = 0; i < str.length(); i ++){
+            if (str.substring(i).equals("c"))
+            cat = str.substring(i, i + 2);
+        }
+
+        if (dogCt == catCt){
+            return true;
+        }
+        return false;
+    }
 }
